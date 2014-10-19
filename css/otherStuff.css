@@ -38,3 +38,9 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.125; }
+
+h1 {
+  width: 80%;
+  margin: 10px auto 20px;
+  font-size: 24px;
+  font-weight: bold; }
