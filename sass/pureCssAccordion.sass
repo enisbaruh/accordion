@@ -1,0 +1,41 @@
+$dark: #002f80
+$light: #0041b3
+$text: #F2F2F2
+
+ul.pureCssAccordion
+	width: 70%
+	margin: 10px auto
+
+li.pureCssAccordion__item
+	position: relative
+	border-top: 1px solid $text
+	&:first-child
+		border-top: none
+
+label.pureCssAccordion__label
+	display: block
+	cursor: pointer
+	background-color: $dark
+	color: $text
+	padding: 10px
+	font-weight: bold
+	user-select: none
+input.pureCssAccordion__input
+	border: 0
+	clip: rect(0 0 0 0)
+	height: 1px
+	margin: -1px
+	overflow: hidden
+	padding: 0
+	position: absolute
+	width: 1px
+
+	&:checked + div.pureCssAccordion__container
+		display: block
+
+div.pureCssAccordion__container
+	display: none
+	background-color: $light
+	color: $text
+	padding: 10px
+

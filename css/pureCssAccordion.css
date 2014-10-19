@@ -1,0 +1,39 @@
+ul.pureCssAccordion {
+  width: 70%;
+  margin: 10px auto; }
+
+li.pureCssAccordion__item {
+  position: relative;
+  border-top: 1px solid #F2F2F2; }
+  li.pureCssAccordion__item:first-child {
+    border-top: none; }
+
+label.pureCssAccordion__label {
+  display: block;
+  cursor: pointer;
+  background-color: #002f80;
+  color: #F2F2F2;
+  padding: 10px;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+input.pureCssAccordion__input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+  input.pureCssAccordion__input:checked + div.pureCssAccordion__container {
+    display: block; }
+
+div.pureCssAccordion__container {
+  display: none;
+  background-color: #0041b3;
+  color: #F2F2F2;
+  padding: 10px; }
